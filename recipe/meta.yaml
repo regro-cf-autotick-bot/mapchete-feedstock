@@ -1,5 +1,5 @@
 {% set name = "mapchete" %}
-{% set version = "2022.11.2" %}
+{% set version = "2023.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mapchete-{{ version }}.tar.gz
-  sha256: effd92a7e11dfcb5ba827cfd61aa1c76c534ca2ab1752b7358e011f2c7dc7ca7
+  sha256: 2706a0e1bbe70790e8a92f7bd7d6dbec2112e0e5e42bff5dc8dfb3322cec39ce
 
 build:
   entry_points:
@@ -18,10 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - hatchling
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - python-dateutil
     - cachetools
     - cached-property
@@ -36,9 +37,9 @@ requirements:
     - oyaml
     - pyproj
     - retry
-    - rasterio >=1.0.28
+    - rasterio >=1.2.10
     - shapely
-    - tilematrix >=2022.3.0
+    - tilematrix >=2022.12.0
     - tqdm
 
 test:
