@@ -1,5 +1,5 @@
 {% set name = "mapchete" %}
-{% set version = "2023.7.1" %}
+{% set version = "2023.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mapchete-{{ version }}.tar.gz
-  sha256: 87f0db04a986cb8bd23aa0b816347e5c623d2cfd26f057034e5baa86310dc128
+  sha256: 803eb7a49d3daa5cd1981729b2a1a4df410c85f23cb63fbc02777784e93f6437
 
 build:
   entry_points:
@@ -25,20 +25,20 @@ requirements:
     - python >=3.8
     - python-dateutil
     - cachetools
-    - cached-property
     - click >=7.1.1
     - click-plugins
     - click-spinner
     - fiona >=1.8.13.post1
-    - fsspec
+    - fsspec >=0.8.4
     - importlib-metadata
     - importlib-resources
     - numpy >=1.16
     - oyaml
+    - pydantic <2.0.0
     - pyproj
     - retry
     - rasterio >=1.2.10
-    - shapely
+    - shapely >=2.0.0
     - tilematrix >=2022.12.0
     - tqdm
 
