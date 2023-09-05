@@ -1,5 +1,5 @@
 {% set name = "mapchete" %}
-{% set version = "2023.8.1" %}
+{% set version = "2023.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mapchete-{{ version }}.tar.gz
-  sha256: 803eb7a49d3daa5cd1981729b2a1a4df410c85f23cb63fbc02777784e93f6437
+  sha256: 287e6e5dc530d2e4da6857c423336cce2049d183cbb179166452ebe21c4384d2
 
 build:
   entry_points:
@@ -24,6 +24,7 @@ requirements:
   run:
     - python >=3.8
     - python-dateutil
+    - affine
     - cachetools
     - click >=7.1.1
     - click-plugins
