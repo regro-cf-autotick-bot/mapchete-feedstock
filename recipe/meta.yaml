@@ -1,5 +1,5 @@
 {% set name = "mapchete" %}
-{% set version = "2023.10.0" %}
+{% set version = "2023.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mapchete-{{ version }}.tar.gz
-  sha256: 279f18e4dfe89fbc60e1f28937d23bee2e9d43dc5cb95e291d18642cab9d16b6
+  sha256: 3edfd3d1b23565e4585677a2b7442f6d315c257d64334ad4acf353a01bc3d60f
 
 build:
   entry_points:
@@ -29,6 +29,8 @@ requirements:
     - click >=7.1.1
     - click-plugins
     - click-spinner
+    - dask
+    - distributed
     - fiona >=1.8.13.post1
     - fsspec >=0.8.4
     - importlib-metadata
