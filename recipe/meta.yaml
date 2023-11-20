@@ -29,6 +29,8 @@ requirements:
     - click >=7.1.1
     - click-plugins
     - click-spinner
+    - dask
+    - distributed
     - fiona >=1.8.13.post1
     - fsspec >=0.8.4
     - importlib-metadata
