@@ -1,5 +1,5 @@
 {% set name = "mapchete" %}
-{% set version = "2023.12.0" %}
+{% set version = "2023.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mapchete-{{ version }}.tar.gz
-  sha256: 4654802c86a14a7369d0cc67eeed286a400c7f15086f14335dca332967dd1567
+  sha256: 193544d88e1a32cb431a8662fed855d8069872b1f3aa83858f0620e62f6163f9
 
 build:
   entry_points:
@@ -32,7 +32,8 @@ requirements:
     - dask
     - distributed
     - fiona >=1.8.13.post1
-    - fsspec >=0.8.4
+    - flask>=1.1.2,<=3.0.0    
+    - fsspec[http,s3]>=2023.12.0
     - importlib-metadata
     - importlib-resources
     - numpy >=1.16
@@ -42,6 +43,7 @@ requirements:
     - pyproj
     - retry
     - rasterio >=1.2.10
+    - s3fs>2023.9.0    
     - shapely >=2.0.0
     - tilematrix >=2022.12.0
     - tqdm
