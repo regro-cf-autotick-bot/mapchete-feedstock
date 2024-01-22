@@ -9,6 +9,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mapchete-{{ version }}.tar.gz
   sha256: 12a86f44fbd013f4f1736c4c235b657f7c6be3fc1f71d9aa524062cc451f0b90
 
+
 build:
   entry_points:
     - mapchete=mapchete.cli.main:main
