@@ -26,6 +26,7 @@ requirements:
     - python-dateutil
     - affine
     - aiobotocore >=1.1.2
+    - aiohttp
     - boto3 >=1.14.44
     - cachetools
     - click >=7.1.1
