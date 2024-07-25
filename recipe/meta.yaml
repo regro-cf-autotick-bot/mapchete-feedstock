@@ -1,5 +1,5 @@
 {% set name = "mapchete" %}
-{% set version = "2024.6.0" %}
+{% set version = "2024.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mapchete-{{ version }}.tar.gz
-  sha256: 6285797d4d32af44e6b06f19e46d477547122a04debabb6acf90703f0431f1c7
+  sha256: b8447c470c942a428a012775f3c5b14d4a37e787acaeb7b0e87dcad99d633901
 
 build:
   entry_points:
@@ -37,6 +37,7 @@ requirements:
     - fiona >=1.8.13.post1
     - flask >=1.1.2,<=3.0.0
     - fsspec[http,s3] >=2023.12.0
+    - geojson-pydantic
     - importlib-metadata
     - importlib-resources
     - lxml
