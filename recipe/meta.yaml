@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mapchete-{{ version }}.tar.gz
-  sha256: 128d6a32026216e8586bf9041cc40f4232bc15f6c5ced4de9bbf404afb879058
+  sha256: b8447c470c942a428a012775f3c5b14d4a37e787acaeb7b0e87dcad99d633901
 
 build:
   entry_points:
