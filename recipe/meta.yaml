@@ -1,5 +1,5 @@
 {% set name = "mapchete" %}
-{% set version = "2024.7.1" %}
+{% set version = "2024.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mapchete-{{ version }}.tar.gz
-  sha256: b8447c470c942a428a012775f3c5b14d4a37e787acaeb7b0e87dcad99d633901
+  sha256: 03499fcf77b230a577ceeabdc1396bcfdf98448fb8360488c52f8da16d270690
 
 build:
   entry_points:
@@ -42,7 +42,7 @@ requirements:
     - importlib-resources
     - lxml
     - memray
-    - numpy >=1.16
+    - numpy >=1.16,<=2.0.1
     - oyaml
     - pydantic >=2.3.0
     - pydantic-settings >=2.0.0
