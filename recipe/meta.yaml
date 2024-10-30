@@ -42,7 +42,7 @@ requirements:
     - importlib-resources
     - lxml
     - memray
-    - numpy >=1.16,<=2.0.1
+    - numpy >=1.16,!=2.0.1
     - oyaml
     - pydantic >=2.3.0
     - pydantic-settings >=2.0.0
