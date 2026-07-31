@@ -1,5 +1,5 @@
 {% set name = "mapchete" %}
-{% set version = "2026.6.0" %}
+{% set version = "2026.7.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mapchete-{{ version }}.tar.gz
-  sha256: 16de226bd8661c3b2467b75ab85220c373a9e72a72b771f3171d7c4fae84b975
+  sha256: 9b8e28d27c362fc60ed17746f62845f828defaee67fb976a15e979e2be0f4682
 
 build:
   entry_points:
